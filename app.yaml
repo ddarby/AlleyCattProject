@@ -18,18 +18,21 @@ handlers:
 #dart webpage
 
 
-#  admin:
-# - url: /dart/alleycatt/web/(.*\.(.*))$
-#   static_files: alleycatt/web/\1
-#   upload: alleycatt/web/.*\.(.*)$
+- url: /css/(.*\.(.*))$
+  static_files: AlleyCatt/web/\css\1
+  upload: AlleyCatt/web/\css\.*\.(.*)$
+
+- url: /js/(.*\.(.*))$
+  static_files: AlleyCatt/web/\js\1
+  upload: AlleyCatt/web/\js\.*\.(.*)$
 
 # - url: /dart/alleycatt/lib/(.*\.(.*))$
 #   static_files: alleycatt/lib/\1
 #   upload: alleycatt/lib/.*\.(.*)$
 
-# - url: /dart/alleycatt/web/.*
-#   static_files: alleycatt/web/index.html
-#   upload: alleycatt/web/index\.html
+- url: /index.html
+  static_files: AlleyCatt/web/index.html
+  upload: alleycatt/web/index\.html
 
 # - url: /alleycatt/(.*\.(.*))$
 #   static_files: alleycatt/build/web/\1

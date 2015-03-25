@@ -1,0 +1,40 @@
+application: alley-catt
+module: default
+version: go6
+runtime: go
+api_version: go1
+
+instance_class: F1
+automatic_scaling:
+  min_idle_instances: 2
+  max_idle_instances: automatic  # default value
+  min_pending_latency: automatic  # default value
+  max_concurrent_requests: 50
+
+handlers:
+- url: /alleycatt/*
+  script: _go_app
+
+#dart webpage
+
+
+#  admin:
+# - url: /dart/alleycatt/web/(.*\.(.*))$
+#   static_files: alleycatt/web/\1
+#   upload: alleycatt/web/.*\.(.*)$
+
+# - url: /dart/alleycatt/lib/(.*\.(.*))$
+#   static_files: alleycatt/lib/\1
+#   upload: alleycatt/lib/.*\.(.*)$
+
+# - url: /dart/alleycatt/web/.*
+#   static_files: alleycatt/web/index.html
+#   upload: alleycatt/web/index\.html
+
+# - url: /alleycatt/(.*\.(.*))$
+#   static_files: alleycatt/build/web/\1
+#   upload: alleycatt/build/web/.*\.(.*)$
+
+# - url: /alleycatt/.*
+#   static_files: alleycatt/build/web/index.html
+#   upload: alleycatt/build/web/index\.html

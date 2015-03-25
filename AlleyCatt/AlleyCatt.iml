@@ -15,6 +15,7 @@
       <excludeFolder url="file://$MODULE_DIR$/web/images/carousel/packages" />
       <excludeFolder url="file://$MODULE_DIR$/web/images/color-picker/packages" />
       <excludeFolder url="file://$MODULE_DIR$/web/images/editor/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/images/emoticons/packages" />
       <excludeFolder url="file://$MODULE_DIR$/web/images/filemanager/icon/packages" />
       <excludeFolder url="file://$MODULE_DIR$/web/images/filemanager/packages" />
       <excludeFolder url="file://$MODULE_DIR$/web/images/gallery/packages" />

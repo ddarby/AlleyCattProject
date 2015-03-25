@@ -2,10 +2,14 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'video.dart';
+import 'emoticoness.dart';
+import 'chathandler.dart';
 
 void main() {
 
-  new VideoThrower();
+  //new VideoThrower();
+
+  new ChatHandler();
 }
 
 

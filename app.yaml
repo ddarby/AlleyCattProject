@@ -18,19 +18,23 @@ handlers:
 #dart webpage
 
 
-- url: /css/(.*\.(.*))$
-  static_files: AlleyCatt/web/\css\1
-  upload: AlleyCatt/web/\css\.*\.(.*)$
+- url: /css
+  static_dir: AlleyCatt/web/css
 
-- url: /js/(.*\.(.*))$
-  static_files: AlleyCatt/web/\js\1
-  upload: AlleyCatt/web/\js\.*\.(.*)$
+- url: /js
+  static_dir: AlleyCatt/web/js
 
-- url: /dart/alleycatt/lib/(.*\.(.*))$
-  static_files: alleycatt/lib/\1
-  upload: AlleyCatt/lib/.*\.(.*)$
+- url: /images
+  static_dir: AlleyCatt/web/images
 
-- url: /dart/alleycatt/.*
+- url: /fonts
+  static_dir: AlleyCatt/web/fonts
+
+# - url: /dart/alleycatt/lib/(.*\.(.*))$
+#   static_files: alleycatt/lib/\1
+#   upload: AlleyCatt/lib/.*\.(.*)$
+
+- url: /
   static_files: AlleyCatt/web/index.html
   upload: AlleyCatt/web/index\.html
 
@@ -38,6 +42,6 @@ handlers:
   static_files: AlleyCatt/build/web/\1
   upload: AlleyCatt/build/web/.*\.(.*)$
 
-- url: /alleycatt/.*
-  static_files: AlleyCatt/build/web/index.html
-  upload: AlleyCatt/build/web/index\.html
+- url: /(.*\.html)$
+  static_files: AlleyCatt/web/\1
+  upload: AlleyCatt/web/(.*\.html)$

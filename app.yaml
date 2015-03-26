@@ -26,18 +26,18 @@ handlers:
   static_files: AlleyCatt/web/\js\1
   upload: AlleyCatt/web/\js\.*\.(.*)$
 
-# - url: /dart/alleycatt/lib/(.*\.(.*))$
-#   static_files: alleycatt/lib/\1
-#   upload: alleycatt/lib/.*\.(.*)$
+- url: /dart/alleycatt/lib/(.*\.(.*))$
+  static_files: alleycatt/lib/\1
+  upload: AlleyCatt/lib/.*\.(.*)$
 
-- url: /index.html
+- url: /dart/alleycatt/.*
   static_files: AlleyCatt/web/index.html
-  upload: alleycatt/web/index\.html
+  upload: AlleyCatt/web/index\.html
 
-# - url: /alleycatt/(.*\.(.*))$
-#   static_files: alleycatt/build/web/\1
-#   upload: alleycatt/build/web/.*\.(.*)$
+- url: /alleycatt/(.*\.(.*))$
+  static_files: AlleyCatt/build/web/\1
+  upload: AlleyCatt/build/web/.*\.(.*)$
 
-# - url: /alleycatt/.*
-#   static_files: alleycatt/build/web/index.html
-#   upload: alleycatt/build/web/index\.html
+- url: /alleycatt/.*
+  static_files: AlleyCatt/build/web/index.html
+  upload: AlleyCatt/build/web/index\.html

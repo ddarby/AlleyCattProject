@@ -8,7 +8,7 @@ class PieceSwitcher {
   Piece _footer;
   List<Piece> _piece;
   String _replacePieceId;
-  DivElement _pieceHolder;
+  Element _pieceHolder;
 
   PieceSwitcher(String replacePieceId) {
     this._replacePieceId = replacePieceId;
@@ -22,13 +22,12 @@ class PieceSwitcher {
   void switchPieces(Piece piece) {
     //TODO: Consider Animated Wipe Here instead of hard replace.
     clearPiece();
-    HttpRequest.getString(piece.location()).asStream().transform(new LineSplitter())
-    .forEach((l) => addingLineByLine(l));
+    HttpRequest.getString(piece.location()).asStream().transform(
+        new LineSplitter()).forEach((line) => addingLineByLine(line));
   }
 
   void addingLineByLine(String line) {
     this._pieceHolder.appendHtml(line);
-
   }
 
   void clearPiece() {

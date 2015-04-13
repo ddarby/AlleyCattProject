@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/alleycatt">
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/build" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/packages/alleycatt" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/css/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/fonts/fontawesome/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/fonts/icons/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/fonts/opan-sans/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/fonts/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/html/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/body/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/browsers/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/carousel/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/color-picker/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/editor/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/filemanager/icon/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/filemanager/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/gallery/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/gallery/thumbs/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/icon/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/images-doc/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/media-player/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/photo-gallery/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/profile-pics/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/projects/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/images/shortcuts/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/js/JS full versions/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/js/charts/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/js/file-manager/i18n/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/js/file-manager/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/js/file-manager/proxy/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/js/maps/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/js/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/js/validation/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/alleycatt/web/packages" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="application" />
+  </component>
+</module>

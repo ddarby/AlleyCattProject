@@ -475,7 +475,7 @@ mejs.PluginMediaElement = function (pluginid, pluginType, mediaUrl) {
 
 // JavaScript values and ExternalInterface methods that match HTML5 video properties methods
 // http://www.adobe.com/livedocs/flash/9.0/ActionScriptLangRefV3/fl/video/FLVPlayback.html
-// http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html
+// http://www.whatwg.org/specs/web-apps/current-work/multipage/view-video.html
 mejs.PluginMediaElement.prototype = {
 
 	// special
@@ -775,7 +775,7 @@ mejs.MediaPluginBridge = {
 	},
 
 	// receives events from Flash/Silverlight and sends them out as HTML5 media events
-	// http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html
+	// http://www.whatwg.org/specs/web-apps/current-work/multipage/view-video.html
 	fireEvent: function (id, eventName, values) {
 
 		var
@@ -1100,7 +1100,7 @@ mejs.HtmlMediaElementShim = {
 			return this.getTypeFromFile(url);
 		} else {
 			// only return the mime part of the type in case the attribute contains the codec
-			// see http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#the-source-element
+			// see http://www.whatwg.org/specs/web-apps/current-work/multipage/view-video.html#the-source-element
 			// `video/mp4; codecs="avc1.42E01E, mp4a.40.2"` becomes `video/mp4`
 			
 			if (type && ~type.indexOf(';')) {

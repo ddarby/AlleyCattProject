@@ -2,7 +2,6 @@ import 'dart:html';
 import 'piece.dart';
 import 'pieceswitcher.dart';
 
-
 class SidePane {
   UListElement _rootSidePane;
   Map<Piece, AnchorElement> _pieceMap;
@@ -31,7 +30,7 @@ class SidePane {
     for (Piece key in this._pieceMap.keys) {
       this._rootSidePane.children.add(this.createItem(key.label(), _pieceMap[key]));
       _pieceMap[key].onClick.listen(
-              (MouseEvent) => this._switcher.switchPieces(key));
+              (MouseEvent) => switchPieceEvent(key));
     }
   }
 
@@ -44,7 +43,14 @@ class SidePane {
     liElement.children.add(spanElement);
     return liElement;
   }
+
+  void switchPieceEvent(Piece piece) {
+    this._switcher.switchPieces(piece);
+    piece.registerEventListeners();
+  }
+
 }
+
 //<li>
 //  <a id="view-charts" class="sa-side-chart" href="#">
 //    <span class="menu-item">Charts</span>

@@ -1,15 +1,7 @@
-import 'dart:html';
 import 'package:dnd/dnd.dart';
+import 'dart:html';
 
 abstract class Module {
-  String getDroppableHtml();
-
-  LIElement getListableHtml();
-
-  void setDroppableHtml(String droppableElement);
-
-  void setListableHtml(LIElement listableElement);
-
-  void setDroppableElement(DropzoneEvent event);
-
+  void setDroppableElementListener(DropzoneEvent event);
+  LIElement getListableLIElement();
 }

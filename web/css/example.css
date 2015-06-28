@@ -7,12 +7,15 @@ body {
   margin: 0;
 }
 
-.dropzone .dropzone-empty {
-  background-color: #00ff00;
-  opacity: 0.7;
+.dropzone-empty {
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
 }
 
-.dropzone .dropzone-full {
+.dropzone-full {
   background-color: #00ffff;
   opacity: 0;
 }

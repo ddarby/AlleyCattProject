@@ -1,0 +1,44 @@
+{
+  "name": "AlleyCatt",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AlleyCatt Project",
+  "repository": "https://github.com/ddarby/AlleyCattProject",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/material/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-animate": "^1.4.9",
+    "angular-aria": "^1.4.9",
+    "angular-material": "^1.0.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "angular-messages": "~1.5.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.9",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "live-server": "^0.9.1",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+      "prestart": "npm install",
+      "start": "http-server -a localhost -p 8000 -c-1",
+
+      "pretest": "npm install",
+      "test": "karma start karma.conf.js",
+      "test-single-run": "karma start karma.conf.js  --single-run",
+
+      "preupdate-webdriver": "npm install",
+      "update-webdriver": "webdriver-manager update"
+    }
+}
+
+
